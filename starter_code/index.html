@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>CSS HTML Forms Lab</title>
+	<link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -98,11 +99,14 @@
 
 		var main = document.querySelector('#main');
 		function makeResults() {
+			console.log('hey');
 			var results = document.createElement('section');
 			results.innerHTML = '<h1>' + 'A true story:' + '</h1>';
 			results.className = 'container results';
 			main.appendChild(results);
 		};
+
+
 		/*
 		
 			Make a function that will create <section> element and append it to #main.
@@ -114,6 +118,29 @@
 
 
 		$("form").on("submit", function(event){
+			console.log("hey");
+			event.preventDefault();
+			makeResults();
+
+			var $onceUpon = "Once upon a time there was a Developer named " + $ ('#name') .val() + ". ";
+                console.log("Once");
+                $ ('.results').append($onceUpon);
+
+                var $GA = $ ('#name').val() + " came to General Asssembly to " + $ ('#verb-1').val() + " the great mountain of programming knowledge. ";
+               	console.log("GA");
+               $ ('.results').append($GA);
+
+                var $mission = $ ('#mission').val() + ", " + $ ('#name').val() + " shouted. ";
+              	console.log("mission");
+             	$ ('.results').append($mission);
+
+             	var $though = "Though " + $ ('.radioButtons').val() + ", " + $ ('#name').val() + " was able to overcome all obstacles with the power of their " + $ ('#noun-1').val() + ". ";
+              	console.log("though");
+             	$ ('.results').append($though);
+
+             	var $end = "In the end, their success can be contributed entirely to their " + $ ('#check1').val() + ", " + $ ('#check2').val() + ", " + $ ('#check3').val() + " " + $ ('#noun-2').val() + ". ";
+              	console.log("end");
+             	$ ('.results').append($end);
 
 		    // Stop the form from submitting
 

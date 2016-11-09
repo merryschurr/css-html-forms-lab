@@ -3,6 +3,13 @@
 	box-sizing: border-box; 
 	/* ^^^ Forces all elements to include content, padding, and border as part of their width/height calculation: 
 	http://www.w3schools.com/cssref/css3_pr_box-sizing.asp */
+	font-family: 'Proza Libre', sans-serif;
+}
+
+h1 {
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-size: 2.34em;
 }
 
 /* 
@@ -13,13 +20,25 @@
 
 /*-------- Main Styles --------*/
 
+#main {
+	width: 100%;
+}
+
+.formSection.container {
+}
+
+.container.results {
+}
+
+
+
 /* 
 	Make the main container the full width of the page.
 
 	Make the two inner container (the form and the results) align side by side, on the left side of the screen.
 
 	Every container, form, input, and button should have rounded corners.
-*/
+
 
 /*-------- Form Styles --------*/
 
