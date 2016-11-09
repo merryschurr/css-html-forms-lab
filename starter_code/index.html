@@ -134,7 +134,7 @@
               	console.log("mission");
              	$ ('.results').append($mission);
 
-             	var $though = "Though " + $ ('.radioButtons').val() + ", " + $ ('#name').val() + " was able to overcome all obstacles with the power of their " + $ ('#noun-1').val() + ". ";
+             	var $though = "Though " + $ ('input[name = sentiment]:checked').val() + ", " + $ ('#name').val() + " was able to overcome all obstacles with the power of their " + $ ('#noun-1').val() + ". ";
               	console.log("though");
              	$ ('.results').append($though);
 
@@ -142,6 +142,7 @@
               	console.log("end");
              	$ ('.results').append($end);
 
+             	
 		    // Stop the form from submitting
 
 	    	// Append the new <section> created above.
